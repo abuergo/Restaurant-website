@@ -1,0 +1,38 @@
+.postres {
+	padding: 30px;
+	width: 70%;
+	margin: 1.9em auto;
+	justify-items: center;
+	gap: 25px;
+	.titulo-texto {
+        @include flex(column,center);
+		p {
+			margin: 20px 0;
+		}
+	}
+	h1 {
+		text-shadow: 2px 2px $color_sombra;
+		font-size: 60px;
+		align-self: flex-start;
+	}
+}
+.tarjeta-postre {
+	img {
+		width: 200px;
+		border-radius: 5px;
+		transition: all 0.5s ease;
+		&:hover {
+			width: 300px;
+		}
+	}
+    @include flex(row,center);
+    h2 {
+		color: $color_secundario;
+		text-shadow: 2px 2px $color_sombra;
+		padding: 20px;
+		font-size: 30px;
+	}
+	p {
+		padding: 20px;
+	}
+}

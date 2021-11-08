@@ -1,0 +1,107 @@
+/* Media queries para todas las paginas */
+@media screen and (max-width: 540px) {
+	.comidas {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+@media screen and (max-width: 1320px) {
+	.comidas {
+		display: grid;
+		grid-gap: 50px;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: center;
+		width: 90%;
+		margin: 3em auto;
+	}
+	.inputs-formulario {
+		input {
+			grid-column: span 3;
+		}
+		#menu-desplegable{
+			grid-column: span 3;
+		}
+	}
+	.contenedor-quienes-somos {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin: 1.5em auto;
+		width: 70%;
+		grid-gap: 40px;
+		justify-content: center;
+		padding: 50px;
+		.imagenes-quienes-somos {
+			&:nth-child(1) {
+				grid-column: 1/-1;
+			}
+			&:nth-child(3) {
+				grid-column: span 1;
+			}
+			&:nth-child(4) {
+				grid-column: span 1;
+			}
+			&:nth-child(5) {
+				grid-column: span 1;
+			}
+		}
+		.texto-quienes-somos {
+			grid-column: 1/-1;
+		}
+	}
+	.contenedor-tarjetas {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: center;
+		margin: 8.5em auto;
+		width: 80%;
+		grid-gap: 4em;
+	}
+}
+@media screen and (max-width: 960px) {
+	.comidas {
+		display: grid;
+		grid-gap: 50px;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: center;
+		width: 90%;
+		margin: 3em auto;
+	}
+	.contenedor-tarjetas {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		justify-items: center;
+		margin: 8.5em auto;
+		width: 80%;
+		grid-gap: 4em;
+	}
+	.tarjeta-postre{
+		flex-direction: column;
+		h2{
+			text-align: center;
+		}
+	}
+}
+@media screen and (max-width: 720px) {
+	.contenedor-quienes-somos {
+		.imagenes-quienes-somos {
+			&:nth-child(1) {
+				grid-column: 1/-1;
+			}
+			&:nth-child(3) {
+				grid-column: 1/-1;
+			}
+			&:nth-child(4) {
+				grid-column: 1/-1;
+			}
+			&:nth-child(5) {
+				grid-column: 1/-1;
+			}
+		}
+		.texto-quienes-somos {
+			grid-column: 1/-1;
+		}
+	}
+	.comidas{
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+}

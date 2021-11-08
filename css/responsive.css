@@ -1,0 +1,93 @@
+
+/* Responsive pagina de INICIO */
+@media screen and (max-width: 540px) {
+    .comidas {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  
+  @media screen and (max-width: 1320px) {
+    .comidas {
+      display: grid;
+      grid-gap: 50px;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      width: 90%;
+      margin: 3em auto;
+    }
+  }
+    
+  @media screen and (max-width: 960px) {
+    .comidas {
+      display: grid;
+      grid-gap: 50px;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      width: 90%;
+      margin: 3em auto;
+    }
+  }
+  
+
+
+/* RESPONSIVE PARA PAGINA QUIENES SOMOS (de practica) */
+
+@media screen and (max-width: 1320px) {
+
+    .contenedor-quienes-somos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 1.5em auto;
+      width: 70%;
+      grid-gap: 40px;
+      justify-content: center;
+      padding: 50px;
+    }
+  
+    .contenedor-quienes-somos .imagenes-quienes-somos:nth-child(1),
+    .contenedor-quienes-somos .texto-quienes-somos{
+      grid-column: 1/-1;
+    }
+  
+    .contenedor-quienes-somos .imagenes-quienes-somos:nth-child(3),
+    .contenedor-quienes-somos .imagenes-quienes-somos:nth-child(4),
+    .contenedor-quienes-somos .imagenes-quienes-somos:nth-child(5) {
+      grid-column: span 1;
+    }
+  }
+  
+  @media screen and (max-width: 720px) {
+    .contenedor-quienes-somos .imagenes-quienes-somos:nth-child(1),
+    .contenedor-quienes-somos .texto-quienes-somos,
+    .contenedor-quienes-somos .imagenes-quienes-somos:nth-child(3),
+    .contenedor-quienes-somos .imagenes-quienes-somos:nth-child(4),
+    .contenedor-quienes-somos .imagenes-quienes-somos:nth-child(5) {
+      grid-column: 1/-1;
+    }
+  }
+  
+
+/* Responsive para pagina de reservas */
+
+@media screen and (max-width: 1320px) {
+    .contenedor-tarjetas {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      margin: 8.5em auto;
+      width: 80%;
+      grid-gap: 4em;
+    }
+  }
+  
+  @media screen and (max-width: 960px) {
+    .contenedor-tarjetas {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+      margin: 8.5em auto;
+      width: 80%;
+      grid-gap: 4em;
+    }
+  }
