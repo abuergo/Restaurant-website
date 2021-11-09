@@ -78,6 +78,9 @@
 		h2{
 			text-align: center;
 		}
+		.imagen-postre{
+			@include flex(row,center);
+		}
 	}
 }
 @media screen and (max-width: 720px) {

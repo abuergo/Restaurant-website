@@ -403,6 +403,11 @@ header {
   .tarjeta-postre h2 {
     text-align: center;
   }
+  .tarjeta-postre .imagen-postre {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
 }
 @media screen and (max-width: 720px) {
   .contenedor-quienes-somos .imagenes-quienes-somos:nth-child(1) {
