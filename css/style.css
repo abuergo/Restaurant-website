@@ -446,6 +446,10 @@ header .link-nav-hover:hover {
     justify-content: center;
   }
 
+  .contacto h1 {
+    font-size: 38px;
+  }
+
   .comidas {
     grid-template-columns: repeat(1, 1fr);
   }
