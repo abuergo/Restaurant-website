@@ -1,7 +1,6 @@
 .postres {
-	padding: 30px;
-	width: 70%;
-	margin: 1.9em auto;
+	width: 65%;
+	margin: 4em auto;
 	justify-items: center;
 	gap: 25px;
 	.titulo-texto {
@@ -13,7 +12,7 @@
 	h1 {
 		text-shadow: 2px 2px $color_sombra;
 		font-size: 60px;
-		align-self: flex-start;
+		text-align: start;
 	}
 }
 .tarjeta-postre {

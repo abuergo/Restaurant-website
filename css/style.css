@@ -206,9 +206,8 @@ header .link-nav-hover:hover {
 }
 
 .postres {
-  padding: 30px;
-  width: 70%;
-  margin: 1.9em auto;
+  width: 65%;
+  margin: 4em auto;
   justify-items: center;
   gap: 25px;
 }
@@ -223,7 +222,7 @@ header .link-nav-hover:hover {
 .postres h1 {
   text-shadow: 2px 2px rgba(197, 197, 197, 0.849);
   font-size: 60px;
-  align-self: flex-start;
+  text-align: start;
 }
 
 .tarjeta-postre {
@@ -396,11 +395,19 @@ header .link-nav-hover:hover {
     grid-gap: 4em;
   }
 
+  .postres {
+    width: 80%;
+  }
+  .postres h1 {
+    text-align: center;
+  }
+
   .tarjeta-postre {
     flex-direction: column;
   }
   .tarjeta-postre h2 {
     text-align: center;
+    padding: 20px 20px 0px 20px;
   }
   .tarjeta-postre .imagen-postre {
     display: flex;
@@ -427,6 +434,17 @@ header .link-nav-hover:hover {
 
   .comidas {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  #checkbox {
+    display: block;
+    margin: 0.3em auto;
+  }
+
+  .botones-formulario label {
+    display: flex;
+    justify-content: center;
   }
 }
 
