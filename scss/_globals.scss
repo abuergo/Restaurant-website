@@ -8,7 +8,7 @@ $fuentes: "Roboto Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Rob
 @mixin titulo-y-texto($tamaniotititulo, $tamaniotexto){
     display: flex;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     flex-direction: column;
     margin: 50px;
     h1{
